@@ -6,6 +6,7 @@ public class InStockPhones {
 
     public void listPhones() {
         char input = ' ';
+        char input2 = ' ';
         boolean exit = false;
         Scanner scan = new Scanner(System.in);
 
@@ -30,106 +31,57 @@ public class InStockPhones {
                 case '1':
                     System.out.println("Congratulations on your purchase of the Galaxy S22 Ultra!");
                     System.out.println("Your receipt and tracking number have been sent to your email address.");
-                    System.out.println("Would you like to make another purchase? (y/n)");
-
-                    buyAgain = scan.next().charAt(0);
-                    if (buyAgain=='y') {
-                        break;
-                    }
-                    else {
-                        exit=true;
-                    }
+                    break;
 
                 case '2':
                     System.out.println("Congratulations on your purchase of the Galaxy S22 Plus!");
                     System.out.println("Your receipt and tracking number have been sent to your email address.");
-                    System.out.println("Would you like to make another purchase? (y/n)");
-                    buyAgain = scan.next().charAt(0);
-                    if (buyAgain=='y') {
-                        break;
-                    }
-                    else {
-                        exit=true;
-                    }
+                    break;
 
                 case '3':
                     System.out.println("Congratulations on your purchase of the Galaxy S22!");
                     System.out.println("Your receipt and tracking number have been sent to your email address.");
-                    System.out.println("Would you like to make another purchase? (y/n)");
+                    break;
 
-                    buyAgain = scan.next().charAt(0);
-                    if (buyAgain=='y') {
-                        break;
-                    }
-                    else {
-                        exit=true;
-                    }
                 case '4':
                     System.out.println("Congratulations on your purchase of the Apple Iphone 13 Pro Max!");
                     System.out.println("Your receipt and tracking number have been sent to your email address.");
-                    System.out.println("Would you like to make another purchase? (y/n)");
+                    break;
 
-                    buyAgain = scan.next().charAt(0);
-                    if (buyAgain=='y') {
-                        break;
-                    }
-                    else {
-                        exit=true;
-                    }
                 case '5':
                     System.out.println("Congratulations on your purchase of the Apple Iphone 13 Pro!");
                     System.out.println("Your receipt and tracking number have been sent to your email address.");
-                    System.out.println("Would you like to make another purchase? (y/n)");
+                    break;
 
-                    buyAgain = scan.next().charAt(0);
-                    if (buyAgain=='y') {
-                        break;
-                    }
-                    else {
-                        exit=true;
-                    }
                 case '6':
                     System.out.println("Congratulations on your purchase of the Apple Iphone 13!");
                     System.out.println("Your receipt and tracking number have been sent to your email address.");
-                    System.out.println("Would you like to make another purchase? (y/n)");
+                    break;
 
-                    buyAgain = scan.next().charAt(0);
-                    if (buyAgain=='y') {
-                        break;
-                    }
-                    else {
-                        exit=true;
-                    }
                 case '7':
                     System.out.println("Congratulations on your purchase of the Apple Iphone 13 Mini!");
                     System.out.println("Your receipt and tracking number have been sent to your email address.");
-                    System.out.println("Would you like to make another purchase? (y/n)");
+                    break;
 
-                    buyAgain = scan.next().charAt(0);
-                    if (buyAgain=='y') {
-                        break;
-                    }
-                    else {
-                        exit=true;
-                    }
                 case '8':
                     System.out.println("Congratulations on your purchase of the Nokia 3210!");
                     System.out.println("Your receipt and tracking number have been sent to your email address.");
-                    System.out.println("Would you like to make another purchase? (y/n)");
-
-                    buyAgain = scan.next().charAt(0);
-                    if (buyAgain=='y') {
-                        break;
-                    }
-                    else {
-                        exit=true;
-                    }
+                    break;
                 case 'x':
                     exit = true;
                     break;
                 default:
                     System.out.println("\nInvalid Choice! \nPlease select again!");
             }
+            System.out.println("Would you like to make another purchase? (y/n)");
+            buyAgain=scan.next().charAt(0);
+            if (buyAgain=='y'){
+                continue;
+            }
+            else {
+                exit=true;
+            }
+
         }
     }
 
