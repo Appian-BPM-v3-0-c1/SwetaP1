@@ -1,9 +1,15 @@
 package com.revature.phoneshop.ui;
 
-import java.util.Scanner;
-import java.util.SortedMap;
+import com.revature.phoneshop.models.User;
 
-public class MainMenu implements InterfaceMenu{
+import java.util.Scanner;
+
+public class MainMenu implements IMenu{
+    private final User user;
+
+    public MainMenu(User user) {
+        this.user = user;
+    }
 
     @Override
     public void start() {
@@ -17,7 +23,7 @@ public class MainMenu implements InterfaceMenu{
         while (!exit)
         {
             System.out.println("\nWelcome to Sweta's Cell Phone Store!");
-            System.out.println("\n[1]  Purchase from Phones in Stock");
+            System.out.println("\n[1]  Purchase from Phone in Stock");
             System.out.println("[2]  Order a Phone Not in stock");
             System.out.println("[x]  Exit");
 

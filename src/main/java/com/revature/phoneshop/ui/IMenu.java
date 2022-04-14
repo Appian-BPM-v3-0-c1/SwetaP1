@@ -1,7 +1,5 @@
 package com.revature.phoneshop.ui;
 
-public interface InterfaceMenu {
-
+public interface IMenu {
     void start();
-
 }
